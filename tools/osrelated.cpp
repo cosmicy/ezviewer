@@ -103,7 +103,7 @@ void moveFile2Trash(const QString &filePath)
         FileOp.fFlags |= FOF_NOCONFIRMATION;    //! delete without notification dialog
 
     // IF file is being used, the return value is 32 or 1223.
-    if(SHFileOperation(&FileOp)) // Actually delete file here
+    //if(SHFileOperation(&FileOp)) // Actually delete file here
         QMessageBox::warning(0, QObject::tr("Delete Failed"),
                              QObject::tr("Delete file '%1' failed!")
                              .arg(QFileInfo(filePath).fileName()));

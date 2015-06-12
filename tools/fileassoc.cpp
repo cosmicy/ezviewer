@@ -318,7 +318,7 @@ void refreshExplorer()
     if(!isSupportAssociation()) return;
 
 #ifdef Q_WS_WIN
-    SHChangeNotify(SHCNE_ASSOCCHANGED, SHCNF_IDLIST, 0, 0);// Refresh Explorer cache.
+    //SHChangeNotify(SHCNE_ASSOCCHANGED, SHCNF_IDLIST, 0, 0);// Refresh Explorer cache.
 #else
 #endif  // Q_WS_WIN
 }
